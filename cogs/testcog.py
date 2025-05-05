@@ -20,6 +20,7 @@ class Testcog(commands.Cog):
         ping_embed.add_field(name=f'{self.bot.user.name}\'s Latency (ms)', value=f'{round(self.bot.latency * 1000)}ms', inline=False)
         ping_embed.set_footer(text=f'Command invoked by {ctx.user.name}', icon_url=ctx.user.avatar)
         await ctx.response.send_message(embed=ping_embed)
+        
 
 async def setup(bot):
     await bot.add_cog(Testcog(bot))
