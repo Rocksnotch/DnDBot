@@ -44,5 +44,6 @@ class sheetConfig(Enum):
     INV_TWO = "AG5:BH65"
     INV_THREE = "BK5:CL65"
 
+    SPELLS = "D24:AX132"
 
 config = sheetConfig
