@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord import app_commands
 
 
-class MainSheet(commands.Cog):
+class Mainsheet(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -53,4 +53,4 @@ class MainSheet(commands.Cog):
     
 
 async def setup(bot):
-    await bot.add_cog(MainSheet(bot))
+    await bot.add_cog(Mainsheet(bot))
